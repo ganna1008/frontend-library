@@ -14,7 +14,6 @@ export default class Library{
             //add to localstorage
             this.saveToLocalStorage();
         }
-
     }
 
     returnMarkup(books){
