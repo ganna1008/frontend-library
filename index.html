@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Frontend-basics</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="container bg-color py-2">
+            <h1 class="is-size-2 has-text-centered mb-5">Library</h1>
+            <h2 class="is-size-5 has-text-centered mb-3">List of Books</h2>
+            <div class="buttons is-justify-content-center">
+                <button id ="show-books" class="button is-primary is-light">Show all books</button>
+                <button id ="show-available-books" class="button is-primary is-light">Show all available books</button>
+                <button id ="add-books" class="button is-link is-light">Add book</button>
+                <button id ="search-books-bei-title" class="button is-info is-light">Search book bei title</button>
+                <button id ="search-books-bei-author" class="button is-success is-light">Search book bei author</button>
+                <button id ="borrow-book" class="button is-warning is-light">Borrow book</button>
+                <button id ="return-book" class="button is-warning is-light">Return book</button>
+            </div>
+
+            <div class="book-add-form form" id="book-add-form">
+                <form  id="submit-add-book"  autocomplete="off">
+                    <p class="my-4 is-size-6 has-text-weight-semibold">Please add a boook:</p>
+                    <div class="field">
+                        <label class="label has-text-grey">Title</label>
+                        <div class="control">
+                            <input class="input is-info" type="text" name="title" placeholder="Title">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label has-text-grey">Author</label>
+                        <div class="control">
+                            <input class="input is-info" type="text" name="author" placeholder="Author">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label has-text-grey">Geners</label>
+                        <div class="control">
+                            <input class="input is-info" type="text" name="genres" placeholder="Geners">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label has-text-grey">Year</label>
+                        <div class="control">
+                            <input class="input is-info" type="text" name="year" placeholder="Year">
+                        </div>
+                    </div>
+                    <div class="control">
+                        <button type="submit"  class="button is-info">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="book-search-by-title-form form" id="book-search-by-title-form">
+                <form  id="submit-search-book-title"  autocomplete="off">
+                    <p class="my-4 is-size-6 has-text-weight-semibold">Please enter a title:</p>
+                    <div class="field">
+                        <label class="label has-text-grey">Title</label>
+                        <div class="control">
+                            <input class="input is-info" type="text" name="title" placeholder="Title">
+                        </div>
+                    </div>
+                    <div class="control">
+                        <button type="submit"  class="button is-info">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="book-search-by-author-form form" id="book-search-by-author-form">
+                <form  id="submit-search-book-author"  autocomplete="off">
+                    <p class="my-4 is-size-6 has-text-weight-semibold">Please enter a title:</p>
+                    <div class="field">
+                        <label class="label has-text-grey">Author</label>
+                        <div class="control">
+                            <input class="input is-info" type="text" name="author" placeholder="Author">
+                        </div>
+                    </div>
+                    <div class="control">
+                        <button type="submit"  class="button is-info">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="borrow-book-form form" id="borrow-book-form">
+                <form  id="submit-borrow-book"  autocomplete="off">
+                    <p class="my-4 is-size-6 has-text-weight-semibold">Please enter an id of book:</p>
+                    <div class="field">
+                        <label class="label has-text-grey">Id</label>
+                        <div class="control">
+                            <input class="input is-info" type="text" name="id" placeholder="id">
+                        </div>
+                    </div>
+                    <div class="control">
+                        <button type="submit"  class="button is-info">Borrow</button>
+                    </div>
+                </form>
+            </div>
+            <div class="return-book-form form" id="return-book-form">
+                <form  id="submit-return-book"  autocomplete="off">
+                    <p class="my-4 is-size-6 has-text-weight-semibold">Please enter an id of book:</p>
+                    <div class="field">
+                        <label class="label has-text-grey">Id</label>
+                        <div class="control">
+                            <input class="input is-info" type="text" name="id" placeholder="id">
+                        </div>
+                    </div>
+                    <div class="control">
+                        <button type="submit"  class="button is-info">Return</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="books-container"></div>
+
+
+
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/short-unique-id@5.2.0/dist/short-unique-id.min.js"></script>
+        <script src="./js/index.js" type="module"></script>
+    </body>
+</html>

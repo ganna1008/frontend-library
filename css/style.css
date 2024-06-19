@@ -1,0 +1,51 @@
+body{
+
+}
+
+.bg-color{
+    background-color: bisque;
+}
+
+.book-title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.book-author, .book-genres, .book-publischedYear, .book-id, .book-isAvailable{
+    margin-bottom: 10px;
+}
+
+.book-author>span, .book-genres>span, .book-publischedYear>span, .book-id>span, .book-isAvailable>span{
+   font-weight: bolder;
+}
+
+
+.book-container{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.book-add-form{
+    display: none;
+    width: 40%;
+    padding: 20px 15px;
+    margin: 0 auto;
+}
+
+.book-search-by-title-form,
+.book-search-by-author-form,
+.borrow-book-form,
+.return-book-form
+{
+    display: none;
+    width: 40%;
+    padding: 20px 15px;
+    margin: 0 auto;
+}
+
